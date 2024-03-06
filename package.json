@@ -29,7 +29,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "npm-run-all --parallel watch:client watch:server",
     "watch:server": "nodemon server/index.mjs",
     "serve": "webpack serve",
@@ -38,6 +38,7 @@
   },
   "repository": {
     "type": "git",
+
     "url": "git+https://github.com/WebAlexB/Lesson28.github.io.git"
   },
   "keywords": [],
