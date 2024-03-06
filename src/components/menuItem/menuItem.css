@@ -1,0 +1,7 @@
+.menu-items:hover {
+    border: 1px solid white;
+    border-radius: 40px;
+}
+.menu-items {
+    margin-right: 50px;
+}
