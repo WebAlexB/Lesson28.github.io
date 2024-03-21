@@ -1,15 +1,22 @@
 import React, {Component} from 'react';
-import Header from "../header/header";
-import Main from "../main/main";
+import {Route, Routes} from "react-router-dom";
+import Home from "../pages/home";
+import Contacts from "../pages/contacts";
+import Materials from "../pages/materials";
+import Question from "../pages/question/question";
+import NotFound from "../pages/notFound";
 import '../app/app.css';
 
 export default class App extends Component {
     render() {
         return (
-            <div>
-                <Header/>
-                <Main/>
-            </div>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/contacts" element={<Contacts/>}/>
+                <Route path="/materials" element={<Materials/>}/>
+                <Route path="/question" element={<Question/>}/>
+                <Route path="*" element={<NotFound/>}/>
+            </Routes>
         );
     }
 };

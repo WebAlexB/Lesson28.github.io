@@ -9,7 +9,7 @@
     padding: 20px;
     background: black;
 }
-.header a {
+.header .link {
     align-items: center;
     background-image: linear-gradient(102deg, #436DDA -4.52%, #BF79BC 97.67%);
     border-radius: 40px;
